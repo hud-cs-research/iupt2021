@@ -1,0 +1,684 @@
+
+/* BEGIN TYPOGRAPHY & COLORS */
+ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+    font-size: 62.5%; /* Resets 1em to 10px */
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    color: #333;
+    text-align: center;
+    background: url(../img/bg-body.png);
+	
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1rem;
+}
+a:hover,
+a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    font-weight: bold;
+}
+
+td {
+    background: none;
+    font-family: tahoma, verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #5d6e75;
+    padding: 0px;
+    text-align: left;
+}
+
+hr { /*Horizontal Line*/
+    /*    height: 0;
+        border: none;
+        padding: 0px 0 0px 0;
+        border-bottom: 1px solid #1768B7;*/
+}
+
+a img {
+    border: none;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* BEGIN LAYOUT */
+
+#page {
+    margin: 10px auto;
+    padding: 0;
+    width: 950px;
+    border: 0px solid #959596;
+    text-align: left;
+    background-color: #FAFAFA;
+}
+
+#page table{}
+#page table tr{}
+
+
+
+#page table tr td #centercolumn {
+	width: 950px;
+	margin: 0px;
+	text-align: center;
+}
+
+#page table tr td #centercolumn table tr th{
+	background-color: #CCC;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	height: 30px;
+}
+
+
+#page table tr td #centercolumn table tr td{
+	text-align: justify;
+	padding: 0px;
+}
+
+#page table tr td #centercolumn table tr td p img{
+	text-align: center;
+}
+
+
+
+#header {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    height: 110px;
+    width: 100%;
+
+    background: #FAFAFA;   
+    background-size: 100%;
+    background-position: 100% 75%;
+}
+
+#header h1{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 4em;
+    text-align: center;
+}
+
+#header h1 a, #header h1 a:hover{
+    color: white;
+}
+
+#header h2 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+#title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Heavy', 'Lucida Grande', Verdana, Arial, Sans-Serif;  
+    color: #000000;
+	
+    position: relative;
+    top: 0px;
+	left:  -25px;
+    text-align: center;
+    cursor: default;
+    text-shadow: 0px 0px 5px #3e5a12, 0px 2px 2px #3e5a12;
+
+}
+
+#eventdate {
+    position: relative;
+    font-weight: bold;
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    font-size: 18px;
+	color: #3C3C3C;
+
+    text-align: center;;
+    top: 2px;
+
+}
+
+
+.eventdesc{
+    /*color: #1768B7;*/
+
+    font-size: 23px;
+    font-family: 'Franklin Gothic Heavy', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    color: #3C3C3C;
+	
+    position: relative; 
+
+    
+    text-align: center;
+    width: 950px;
+   
+}
+
+
+/* LOGIN */
+
+#navigation{
+    font-size: 11px;
+    width: 690px;
+    height: 22px; 
+    position: relative;
+    /*top: 63px;
+    left: 13px;*/
+    list-style: none;
+}
+#navigationmenu{
+    font-size: 11px;
+    width: 690px;
+    height: 22px; 
+    position: absolute;
+    top: 65px;
+    left: -11px;
+    list-style: none;
+}
+
+#navigation li{
+    background: none;
+    display: inline;
+}
+
+
+
+#content {
+    float: right;
+    margin-top: 0px;
+    font-size: 14px
+}
+
+
+#sidebar {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 200px;
+    top: 0px;
+    font: 1.2em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    /*background-color: #F2F2F2;*/
+    background-color: #bbe8a4;
+}
+
+/* navigation list adapted from
+ * http: //maxdesign.com.au/presentation/tame/test11.htm */
+.navlist {
+    padding: 0px;
+    margin: 0px;
+    text-indent: 0;
+}
+
+
+.navlist ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navlist li {
+    padding: 0;
+    margin: 0;
+}
+
+.navlist a {
+    display: block;
+    padding: 5px 0px 5px 10px;
+    width: 190px;
+    font-size: 1.5em;
+}
+
+.navlist a:link, .navlist a:visited {
+    color: #3e5a12;
+    background-color: #bbe8a4;
+    text-decoration: none;
+}
+
+.navlist a:hover, .navlist a:active {
+    color: white;
+    background-color: #3e5a12;
+    text-decoration: none;
+}
+
+.navlist ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#MenuBar1 a {
+    font-weight: bold;
+}
+
+.sponsor {
+    text-align: center;
+}
+
+.sponsor a {
+    padding: 0;
+    width: 100%;
+}
+
+.sponsor a:link, .sponsor a:visited, .sponsor a:hover, .sponsor a:active {
+    background-color: #bbe8a4;
+}
+
+.sponsor img {
+    width: 100%;
+}
+
+.subnavlist li {
+    margin: 0;
+}
+
+.subnavlist a {
+    display: block;
+    padding: 0px 2px 0px 20px;
+    width: 170px;
+}
+
+.subnavlist a:link, .subnavlist a:visited {
+    background-color: #eaf8e6;
+    text-decoration: none;
+}
+
+.subnavlist a:hover, .subnavlist a:active {
+    color: white;
+    background-color: #3e5a12;
+    text-decoration: none;
+}
+
+
+.narrowcolumn {
+    padding: 10px 30px 20px 10px;
+    margin: 0px 0 0;
+    width: 680px;
+    text-align: justify;
+}
+
+
+.narrowcolumn .entry, .widecolumn .entry {
+    line-height: 1.4em;
+}
+
+.widecolumn {
+    line-height: 1.6em;
+}
+
+#footer {
+    padding: 0;
+    margin: 0 auto;
+    /*    width: 950px;
+        height: 115px;*/
+    clear: both;
+    background: transparent url("../img/eventfooter12.jpg") bottom left no-repeat;
+}
+
+#footer p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* END LAYOUT  */
+
+
+
+
+
+/* Lee */
+
+/* Committee list*/
+.committee-list td {
+    padding: 3px;
+    font-family: verdana; 
+    font-size: 10pt; 
+    color: black;
+}
+
+.committee-list-poster td {
+    padding: 3px;
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+    color: black;
+}
+
+.committee-list img
+{
+    width: 70px;
+}
+
+#external_content {
+    float: right;
+    margin-top: 22px;
+    font-size: 1.2em
+}
+
+
+#external_content a {
+    color: #3e5a12;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+}
+
+#external_content a:hover {
+    color: #3e5a12;
+    background-color: #eaf8e6;
+    text-decoration: none;
+}
+
+
+.smallt {background: url(../img/dot.gif) 0 0 repeat-x; width: 20em;}
+.smallb {background: url(../img/dot.gif) 0 100% repeat-x}
+.smalll {background: url(../img/dot.gif) 0 0 repeat-y}
+.smallr {background: url(../img/dot.gif) 100% 0 repeat-y}
+.smallbl {background: url(../img/bl2.gif) 0 100% no-repeat}
+.smallbr {background: url(../img/br2.gif) 100% 100% no-repeat}
+.smalltl {background: url(../img/tl2.gif) 0 0 no-repeat; padding: 5px}
+.smalltr {background: url(../img/tr2.gif) 100% 0 no-repeat; padding: 10px}
+
+.committee-name {
+    font-weight: bold;
+    color: #CC0000;
+}
+
+.shuttle-info {
+    float: left;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.shuttle-info th {
+    padding: 5px; 
+}
+
+.shuttle-info td {
+    padding: 5px; 
+}
+
+.si-item {
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.si-title {
+    /*color: red;*/
+    /*font-weight: bold;*/
+    font-size: 1rem;
+}
+
+.si-title a {
+    font-size: 1.1rem;
+}
+
+.text-red {
+    color: red;
+}
+
+.programs table, .programs th, .programs td{
+    border: 1px solid black;
+}
+.programs th, .programs td{
+    padding: 5px;
+}
+
+.tftable table, .tftable th, .tftable td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tftable th {
+    background-color: #ebffff;
+}
+
+.keynote-speaker {
+    width: 100%;
+}
+
+table.keynote-speaker td {
+    padding: 5px 2px;
+    vertical-align: top;
+}
+
+.keynote-speaker thead > tr > td:first-child {
+    width: 137px;
+}
+
+.keynote-speaker thead:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+table.keynote-speaker tbody {
+    display: none;
+}
+
+.keynote-speaker img {
+    width: 100%;
+}
+
+.speaker-name {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.speaker-text {
+    font-size: 1.1em;
+}
+
+.speaker-title {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.registration table, .registration td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+#page #slides {
+	width: 950px;
+	height: 390px;
+	position: relative;
+	background-color: #FFF;
+	background-image: none;
+}
+
+.slides_container {
+	width: 950px;
+	overflow: hidden;
+	position: relative;
+	display: none;
+	background-image: none;
+	/*background-image: url(../img/mel-skyline1.jpg)*/
+}
+
+.slides_container img {
+	width: 950px;
+	height: 390px;
+	display: block;
+}
+
+
+#slides .prev {
+	margin-top: 5px;
+  	margin-right: 10px;
+  	float: left;
+}
+
+#slides .next {
+	margin-top: 5px;
+  	float: left;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin-top: 5px;
+	margin-bottom: 0;
+	float: right;
+}
+
+.pagination li {
+	float: left;
+	margin: 0 1px;
+	list-style: none;
+}
+
+.pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(../img/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.pagination li.current a, .pagination li.current a:hover {
+	background-position: 0 -13px;
+}
+
+.pagination li a:hover { 
+	background-position: 0 -26px
+}
+
+/*
+	Anchors
+*/
+
+a:link,a:visited {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+
+
+
+.section-header{
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 25px 0 15px 0;
+	color: #339966;
+}
+.section-content p{
+	text-align: justify;
+}
+p.reference
+{
+	font-style:italic;
+	text-align:center;
+}
+
+
+/*
+Calendar
+*/
+
+.calendar
+{
+	color: #FFFFFF;
+	float: left;
+	height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+.dateMarch {
+	background: url("Images/calendarMarch.png") no-repeat scroll left top transparent;
+}
+
+.dateMay {
+	background: url("Images/calendarMay.png") no-repeat scroll left top transparent;
+}
+
+.dateJune {
+	background: url("Images/calendarJune.png") no-repeat scroll left top transparent;
+}
+
+.calendar .date-month {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 14px;
+	padding-top: 5px;
+}
+
+.calendar .date-day {
+	color: #000000;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 21px;
+	padding-top: 0;
+}
